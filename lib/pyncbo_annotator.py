@@ -1,5 +1,6 @@
-import os,json,urllib2,sys
-from hpo_obo import Obo
+import os,json,sys
+from urllib.request import urlopen
+from .hpo_obo import Obo
 
 
 
