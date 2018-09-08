@@ -187,11 +187,11 @@ os.remove(hpo_file_tmp1)
 os.remove(hpo_file_tmp2)
 
 if not args["keeptmp"]:
-	print("Notes: temporary output files were removed. Keeping them by adding on -k")
-	for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
-	    if os.path.isfile(file):
-		os.remove(file)
+    print("Notes: temporary output files were removed. Keeping them by adding on -k")
+    for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
+        if os.path.isfile(file):
+            os.remove(file)
 
-	if args['nlp']=='metamap' and os.path.isfile(input_tmp_name):
+    if args['nlp']=='metamap' and os.path.isfile(input_tmp_name):
 	    os.remove(input_tmp_name)
 print("completed!")
